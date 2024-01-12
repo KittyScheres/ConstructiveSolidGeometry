@@ -30,6 +30,9 @@
     <ClCompile Include="Source\ConstructiveSolidGeometryProject.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Primitives\Meshes\AABBMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Mesh\Face.h">
@@ -53,7 +56,7 @@
     <ClInclude Include="Header\Primitives\Shapes\Sphere.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Primitives\Meshes\Header.h">
+    <ClInclude Include="Header\Primitives\Meshes\AABBMesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,7 +3,9 @@
 #include "../Shapes/AABB.h"
 
 class AABBMesh : public Mesh {
-	public:
-		AABBMesh();
-		AABBMesh(AABB& primitiveData)
+public:
+	AABBMesh(const AABB& primitiveData = AABB());
+
+private:
+	void PushFaceTriangles();
 };

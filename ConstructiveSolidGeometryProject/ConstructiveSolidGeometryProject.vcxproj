@@ -140,13 +140,14 @@
     <ClCompile Include="Source\Mesh\Triangle.cpp" />
     <ClCompile Include="Source\Mesh\Vertex.cpp" />
     <ClCompile Include="Source\ConstructiveSolidGeometryProject.c" />
+    <ClCompile Include="Source\Primitives\Meshes\AABBMesh.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Mesh\Face.h" />
     <ClInclude Include="Header\Mesh\Mesh.h" />
     <ClInclude Include="Header\Mesh\Triangle.h" />
     <ClInclude Include="Header\Mesh\Vertex.h" />
-    <ClInclude Include="Header\Primitives\Meshes\Header.h" />
+    <ClInclude Include="Header\Primitives\Meshes\AABBMesh.h" />
     <ClInclude Include="Header\Primitives\Shapes\AABB.h" />
     <ClInclude Include="Header\Primitives\Shapes\Pyramid.h" />
     <ClInclude Include="Header\Primitives\Shapes\Sphere.h" />
