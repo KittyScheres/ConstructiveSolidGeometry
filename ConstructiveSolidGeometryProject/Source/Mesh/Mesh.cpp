@@ -1,27 +1,12 @@
 #include "Mesh/Mesh.h"
 
-Mesh::Mesh(std::vector<Vertex> vertices) :
-	m_vertices(vertices) 
-{}
 
-Mesh::Mesh(std::vector<Vertex> vertices, std::vector<Face> faces) :
-	m_vertices(vertices),
+
+Mesh::Mesh(const std::vector<Face>& faces) :
 	m_faces(faces)
 {}
 
-void Mesh::PushVertex(Vertex vertex) {
-	m_vertices.push_back(vertex);
-}
-
-void Mesh::PushVertex(Vector3 position) {
-	m_vertices.push_back(Vertex(position));
-}
-
-void Mesh::PushVertex(float x, float y, float z) {
-	m_vertices.push_back(Vertex(x, y, z));
-}
-
-void Mesh::PushFace(Face face) {
+void Mesh::PushFace(const Face& face) {
 	m_faces.push_back(face);
 }
 
@@ -29,7 +14,22 @@ void Mesh::StartNewFace() {
 	m_faces.push_back(Face());
 }
 
-void Mesh::PushTriangle(Triangle triangle) {
+void Mesh::PushVertex(const Vertex& vertex) {
+	if(!m_faces.empty())
+		(*m_faces.end()).PushVertex(vertex);
+}
+
+void Mesh::PushVertex(const Vector3& position) {
+	if (!m_faces.empty())
+		(*m_faces.end()).PushVertex(position);
+}
+
+void Mesh::PushVertex(float x, float y, float z) {
+	if (!m_faces.empty())
+		(*m_faces.end()).PushVertex(x, y, z);
+}
+
+void Mesh::PushTriangle(const Triangle& triangle) {
 	if (!m_faces.empty())
 		(*m_faces.end()).PushTriangle(triangle);
 }

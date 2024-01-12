@@ -10,6 +10,6 @@ Vertex::Vertex(float x, float y, float z) {
 	m_position.z = z;
 }
 
-Vertex::Vertex(Vector3 position) :
+Vertex::Vertex(const Vector3& position) :
 	m_position(position)
 {}

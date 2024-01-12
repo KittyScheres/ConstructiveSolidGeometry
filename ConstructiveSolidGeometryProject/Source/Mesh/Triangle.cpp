@@ -1,8 +1,8 @@
 #include "Mesh/Triangle.h"
 
 Triangle::Triangle() {
-	for(uint32_t index = 0; index < 3; index++)
-		m_indices[index] = 0
+	for (uint32_t index = 0; index < 3; index++)
+		m_indices[index] = 0;
 }
 
 Triangle::Triangle(uint32_t index1, uint32_t index2, uint32_t index3) {

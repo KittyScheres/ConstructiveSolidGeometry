@@ -8,5 +8,5 @@ public:
 public:
 	Vertex();
 	Vertex(float x, float y, float z);
-	Vertex(Vector3 position);
+	Vertex(const Vector3& position);
 };

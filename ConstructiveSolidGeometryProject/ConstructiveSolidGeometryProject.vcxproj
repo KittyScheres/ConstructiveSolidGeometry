@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\raylib\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\raylib\raylib\src;$(ProjectDir)\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -122,7 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\raylib\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\raylib\raylib\src;$(ProjectDir)\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -135,7 +135,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Mesh\Face.cpp" />
+    <ClCompile Include="Source\Mesh\Mesh.cpp" />
+    <ClCompile Include="Source\Mesh\Triangle.cpp" />
+    <ClCompile Include="Source\Mesh\Vertex.cpp" />
     <ClCompile Include="Source\ConstructiveSolidGeometryProject.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Mesh\Face.h" />
+    <ClInclude Include="Header\Mesh\Mesh.h" />
+    <ClInclude Include="Header\Mesh\Triangle.h" />
+    <ClInclude Include="Header\Mesh\Vertex.h" />
+    <ClInclude Include="Header\Primitives\Meshes\Header.h" />
+    <ClInclude Include="Header\Primitives\Shapes\AABB.h" />
+    <ClInclude Include="Header\Primitives\Shapes\Pyramid.h" />
+    <ClInclude Include="Header\Primitives\Shapes\Sphere.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
