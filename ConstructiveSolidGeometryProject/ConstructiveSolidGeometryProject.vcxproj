@@ -139,7 +139,7 @@
     <ClCompile Include="Source\Mesh\Mesh.cpp" />
     <ClCompile Include="Source\Mesh\Triangle.cpp" />
     <ClCompile Include="Source\Mesh\Vertex.cpp" />
-    <ClCompile Include="Source\ConstructiveSolidGeometryProject.c" />
+    <ClCompile Include="Source\ConstructiveSolidGeometryProject.cpp" />
     <ClCompile Include="Source\Primitives\Meshes\AABBMesh.cpp" />
   </ItemGroup>
   <ItemGroup>

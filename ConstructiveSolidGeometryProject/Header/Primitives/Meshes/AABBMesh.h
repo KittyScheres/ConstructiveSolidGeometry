@@ -2,10 +2,12 @@
 #include "../../Mesh/Mesh.h"
 #include "../Shapes/AABB.h"
 
-class AABBMesh : public Mesh {
-public:
-	AABBMesh(const AABB& primitiveData = AABB());
+namespace CSG {
+	class AABBMesh : public Mesh {
+	public:
+		AABBMesh(const AABB& primitiveData = AABB());
 
-private:
-	void PushFaceTriangles();
-};
+	private:
+		void PushFaceTriangles();
+	};
+}

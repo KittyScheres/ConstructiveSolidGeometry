@@ -27,7 +27,7 @@
     <ClCompile Include="Source\Mesh\Vertex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\ConstructiveSolidGeometryProject.c">
+    <ClCompile Include="Source\ConstructiveSolidGeometryProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\Primitives\Meshes\AABBMesh.cpp">

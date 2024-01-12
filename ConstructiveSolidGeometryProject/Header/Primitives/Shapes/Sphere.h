@@ -1,7 +1,9 @@
 #pragma once
 #include "raymath.h"
 
-struct Sphere {
-	Vector3 Position;
-	float Radius;
-};
+namespace CSG {
+	struct Sphere {
+		Vector3 Position;
+		float Radius;
+	};
+}
