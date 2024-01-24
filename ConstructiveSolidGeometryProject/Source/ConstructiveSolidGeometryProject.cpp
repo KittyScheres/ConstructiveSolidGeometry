@@ -55,8 +55,8 @@ int main(void)
         ClearBackground(RAYWHITE);
         BeginMode3D(camera);
 
-        DrawModel(models[0], position, 1.0f, RED);
-        DrawModel(models[1], position, 1.0f, YELLOW);
+        DrawModelWires(models[0], position, 1.0f, RED);
+        DrawModelWires(models[1], position, 1.0f, YELLOW);
 
         EndMode3D();
         EndDrawing();
